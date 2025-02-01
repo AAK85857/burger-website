@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main {
+  background-color: rgb(9, 73, 57);
+  width: 1350px;
+  height: 1250px;
+  overflow: hidden;
+}
+navbar {
+  width: 1350px;
+  height: 100px;
+  display: flex;
+  overflow-x: hidden;
+  gap: 300px;
+}
+.price p,
+.price h2,
+.checkbtn {
+  display: none;
+}
+.checkbtn img {
+  height: 30px;
+  width: 40px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  line-height: 80px;
+  margin: 30px 20px;
+  background-color: white;
+  margin-left: 400px;
+}
+
+label {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 120px;
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+label.active,
+label:hover {
+  background-color: rgb(75, 121, 112);
+  transition: 0.7s;
+  cursor: pointer;
+}
+navbar ul {
+  display: flex;
+  list-style: none;
+  line-height: 20px;
+  gap: 50px;
+  margin-top: 40px;
+}
+navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sansita;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: normal;
+  margin-top: 50px;
+}
+.active,
+a:hover {
+  background-color: rgb(38, 88, 77);
+  transition: 0.5s;
+  cursor: pointe;
+}
+.burger {
+  width: 1350px;
+  height: 900px;
+  overflow-y: hidden;
+  background-image: url(./images/burger.png);
+  background-position-x: 478px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 936px;
+}
+.navcontent {
+  width: 910px;
+  height: 386px;
+  margin-top: 296px;
+  margin-right: 900px;
+  margin-left: -117px;
+}
+.navcontent h6 {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  font-size: 50px;
+  color: #adbc9f;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.navcontent h1 {
+  font-weight: bold;
+  font-family: sansita;
+  text-overflow: ellipsis;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-size: 124px;
+  color: white;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navcontent p {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  display: flex;
+  color: #adbc9f;
+  justify-content: center;
+  margin-top: 45px;
+}
+.frames {
+  margin-left: 100px;
+  gap: 20px;
+  margin-top: 10px;
+  display: flex;
+}
+.f1 {
+  gap: 20px;
+  display: flex;
+}
+.f2 {
+  gap: 20px;
+  display: flex;
+}
+.frames a img {
+  gap: 30px;
+}
+@media screen and (max-width: 1350px) {
+  main {
+    width: 1280vw;
+    height: 1300px;
+    background-color: rgb(9, 73, 57);
+  }
+  navbar ul {
+    position: fixed;
+    width: 90px;
+    height: 200vh;
+    top: 80px;
+    left: -10 0px;
+    text-align: center;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+  }
+  navbar ul li {
+    line-height: 20px;
+    margin-left: 330px;
+    margin-top: 50px;
+    overflow-y: hidden;
+  }
+  navbar ul li a {
+    font-size: 20px;
+    display: none;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  
+  label {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    margin-right: 50px;
+    margin-top: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  label.active,
+  label:hover {
+    background-color: rgb(75, 121, 112);
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .burger {
+    width: 200vw;
+    height: 900px;
+    overflow-y: hidden;
+    background-image: url(./images/burger.png);
+    background-position-x: 1vw;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 436px;
+  }
+  .navcontent {
+    width: 100vw;
+    height: 386px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+  .navcontent h6 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    color: #adbc9f;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  .navcontent h1 {
+    font-weight: bold;
+    font-family: sansita;
+    text-overflow: ellipsis;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-size: 45px;
+    color: white;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navcontent p {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-overflow: ellipsis;
+    font-size: 11px;
+    display: flex;
+    color: #adbc9f;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .price {
+    margin-top: 80px;
+    width: 100vw;
+    height: 50px;
+  }
+  .price p {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    display: flex;
+    color: #adbc9f;
+    justify-content: center;
+  }
+  .price h2 {
+    font-weight: bold;
+    font-family: sansita;
+    text-overflow: ellipsis;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    color: white;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frames {
+    margin-left: 22vw;
+    gap: 20px;
+    margin-top: -319px;
+    display: grid;
+    width: 280vw;
+  }
+  .frames a img {
+    gap: 30px;
+  }
+}
